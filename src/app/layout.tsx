@@ -24,6 +24,7 @@ export default function RootLayout({
 }>) {
   return (
     <html lang="en">
+      <title>XOps Lab</title>
       <body
         className={`${geistSans.variable} ${geistMono.variable} antialiased`}
       >
