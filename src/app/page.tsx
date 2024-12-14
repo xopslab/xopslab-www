@@ -19,13 +19,17 @@
 //     </div>
 //   );
 // }
-import Hero from "@/components/hero";
+"use client";
+import { Case } from "@/components/cases";
+import Hero, { Hero5 } from "@/components/hero";
 
 export default function Page() {
   return (
-    <main className="px-4 mt-16 flex h-screen items-center flex-col md:container">
+    <main className="px-4 flex h-screen items-center flex-col md:container">
       <div className="p-16 md:p-0">
-        <Hero />
+        <Hero5 />
+        {/* <Hero /> */}
+        <Case />
       </div>
     </main>
   );
