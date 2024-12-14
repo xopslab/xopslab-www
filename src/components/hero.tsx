@@ -7,7 +7,7 @@ export default function Hero() {
         Welcome to XOps Lab
       </h1>
       <p className="text-lg font-light max-w-xl text-center text-foreground">
-        XOps Lab is a global community for anyone interested in AI, ML, and Cloud Computing.
+        XOps Lab is a global community for AI, ML, and Cloud enthusiasts to connect, learn, and grow together.
       </p>
       <div className="flex gap-4 md:pb-10 items-center">
         <a

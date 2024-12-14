@@ -9,7 +9,7 @@ import {
   navigationMenuTriggerStyle,
 } from "@/components/ui/navigation-menu";
 import Link from "next/link";
-import {Sheet, SheetContent, SheetTrigger} from "@/components/ui/sheet";
+import {Sheet, SheetContent, SheetDescription, SheetTitle, SheetTrigger} from "@/components/ui/sheet";
 import {MenuIcon} from "lucide-react";
 
 export default function Header() {
@@ -35,7 +35,7 @@ export default function Header() {
             </NavigationMenuItem>
           </NavigationMenuList>
         </NavigationMenu>
-        <Link href="/">
+        <Link href="https://www.youtube.com/@debjotyms/playlists">
           <Button className="ml-5 rounded-full">
             <span className="relative flex h-3 w-3 mr-2">
               <span className="animate-ping absolute inline-flex h-full w-full rounded-full bg-white opacity-75"></span>
@@ -55,37 +55,29 @@ export default function Header() {
         </SheetTrigger>
 
         <SheetContent>
-          <SheetTrigger asChild>
-            <Link className="flex items-center gap-2" href="/">
-              <h3 className="text-lg font-semibold tracking-tight">debjotyms</h3>
-            </Link>
-          </SheetTrigger>
+          <SheetTitle></SheetTitle>
+          <SheetDescription></SheetDescription>
+          <Link href="https://www.youtube.com/@debjotyms/playlists">
+            <Button className="rounded-full">
+              <span className="relative flex h-3 w-3 mr-2">
+                <span className="animate-ping absolute inline-flex h-full w-full rounded-full bg-white opacity-75"></span>
+                <span className="relative inline-flex rounded-full h-3 w-3 bg-white"></span>
+              </span>
+              Free Courses
+            </Button>
+          </Link>
           <ul className="flex flex-col gap-3 mt-4">
             <li>
               <SheetTrigger asChild>
-                <Link href="/">Certifications</Link>
+                <Link href="/">Blog</Link>
               </SheetTrigger>
             </li>
             <li>
               <SheetTrigger asChild>
-                <Link href="/">Projects</Link>
+                <Link href="/">Team</Link>
               </SheetTrigger>
             </li>
-            <li>
-              <SheetTrigger asChild>
-                <Link href="/">About</Link>
-              </SheetTrigger>
-            </li>
-            <li>
-              <SheetTrigger asChild>
-                <Link href="/">Experience</Link>
-              </SheetTrigger>
-            </li>
-            <li>
-              <SheetTrigger asChild>
-                <Link href="/">Contact</Link>
-              </SheetTrigger>
-            </li>
+            <li></li>
           </ul>
         </SheetContent>
       </Sheet>

@@ -24,7 +24,9 @@ import Hero from "@/components/hero";
 export default function Page() {
   return (
     <main className="px-4 mt-16 flex h-screen items-center flex-col md:container">
-      <Hero />
+      <div className="p-16 md:p-0">
+        <Hero />
+      </div>
     </main>
   );
 }
