@@ -18,7 +18,7 @@ export default function Header() {
     <header className="flex items-center py-4 px-4 md:container w-full">
       <div className="w-full justify-start items-center">
         <Link href="/" className="flex items-center">
-          <Image src="/images/xops-logo.jpg" alt="Logo" className="h-10 w-auto" width={40} height={40} />
+          <Image src="/images/xops-logo.jpg" alt="Logo"  width={100} height={100} />
         </Link>
       </div>
       <div className="w-full justify-end items-center hidden md:flex">
