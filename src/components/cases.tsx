@@ -33,6 +33,7 @@ export const Case = () => {
     "/images/xops-logo-black.png",
     "/images/xops-logo-black.png",
     "/images/xops-logo-black.png",
+    "/images/xops-logo-black.png",
     // ...add more image paths as needed
   ];
 
@@ -44,6 +45,7 @@ export const Case = () => {
     const interval = setInterval(() => {
       if (api.selectedScrollSnap() + 1 === api.scrollSnapList().length) {
         setCurrent(0);
+        if (current === 0) {}
         api.scrollTo(0);
       } else {
         api.scrollNext();
