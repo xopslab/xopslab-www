@@ -1,7 +1,4 @@
-import {Button} from "@/components/ui/button";
-import Link from "next/link";
-import {FaGithub, FaDiscord} from "react-icons/fa";
-import Image from "next/image";
+import {FaDiscord} from "react-icons/fa";
 
 export default function Hero() {
   return (

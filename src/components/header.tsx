@@ -11,7 +11,6 @@ import {
 import Link from "next/link";
 import {Sheet, SheetContent, SheetTrigger} from "@/components/ui/sheet";
 import {MenuIcon} from "lucide-react";
-import {cn} from "@/lib/utils";
 
 export default function Header() {
   return (
