@@ -32,6 +32,7 @@ export const Case = () => {
     "/images/xops-logo-black.png",
     "/images/xops-logo-black.png",
     "/images/xops-logo-black.png",
+    "/images/xops-logo-black.png",
     // ...add more image paths as needed
   ];
 

@@ -11,13 +11,14 @@ import {
 import Link from "next/link";
 import {Sheet, SheetContent, SheetDescription, SheetTitle, SheetTrigger} from "@/components/ui/sheet";
 import {MenuIcon} from "lucide-react";
+import Image from "next/image";
 
 export default function Header() {
   return (
     <header className="flex items-center py-4 px-4 md:container w-full">
       <div className="w-full justify-start items-center">
         <Link href="/" className="flex items-center">
-          <img src="/images/xops-logo.jpg" alt="Logo" className="h-10 w-auto" />
+          <Image src="/images/xops-logo.jpg" alt="Logo" className="h-10 w-auto" width={40} height={40} />
         </Link>
       </div>
       <div className="w-full justify-end items-center hidden md:flex">

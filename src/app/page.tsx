@@ -21,7 +21,7 @@
 // }
 "use client";
 import { Case } from "@/components/cases";
-import Hero, { Hero5 } from "@/components/hero";
+import { Hero5 } from "@/components/hero";
 
 export default function Page() {
   return (
