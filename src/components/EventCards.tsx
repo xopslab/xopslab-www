@@ -1,9 +1,9 @@
-import {Card, CardContent, CardDescription, CardFooter, CardHeader, CardTitle} from "@/components/ui/card";
+import {Card, CardContent, CardFooter, CardHeader, CardTitle} from "@/components/ui/card";
 import {Badge} from "@/components/ui/badge";
 import {CalendarIcon, MapPin, Users} from "lucide-react";
 import Image from "next/image";
 import {useEffect, useState} from "react";
-import {Carousel, CarouselContent, CarouselItem, CarouselNext, CarouselPrevious} from "@/components/ui/carousel";
+import {Carousel, CarouselContent, CarouselItem} from "@/components/ui/carousel";
 import {useCallback} from "react";
 import {cn} from "@/lib/utils";
 

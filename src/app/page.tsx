@@ -1,9 +1,7 @@
 "use client";
 import {Hero5} from "@/components/hero";
 import EventCards from "@/components/EventCards";
-import {Card, CardContent, CardDescription, CardHeader, CardTitle} from "@/components/ui/card";
 import {LucideBookOpen, Code, TrendingUp, Crown} from "lucide-react";
-import Link from "next/link";
 
 export default function Page() {
   const features = [
