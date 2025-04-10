@@ -85,11 +85,15 @@ export default function EventCards() {
     }
   }, [api]);
 
+  function handleCardClick(event: React.MouseEvent<HTMLElement>) {
+    // ...existing function body...
+  }
+
   return (
     <section className="py-16 w-full">
       <div className="container mx-auto px-4">
         <div className="text-center mb-12">
-            <h2 className="text-3xl font-bold mb-3 text-slate-600">Previous Events</h2>
+          <h2 className="text-3xl font-bold mb-3 text-slate-600">Previous Events</h2>
           <p className="text-muted-foreground max-w-2xl mx-auto">
             Check out some of our previous community events and workshops
           </p>

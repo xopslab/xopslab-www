@@ -1,9 +1,10 @@
 "use client";
 import {Hero5} from "@/components/hero";
 import EventCards from "@/components/EventCards";
-import {LucideBookOpen, Code, TrendingUp, Crown} from "lucide-react";
+import {LucideBookOpen, Code, TrendingUp} from "lucide-react";
 
 export default function Page() {
+  // eslint-disable-next-line @typescript-eslint/no-unused-vars
   const features = [
     {
       icon: <LucideBookOpen className="h-10 w-10 text-blue-500" />,
@@ -22,7 +23,7 @@ export default function Page() {
       title: "Grow",
       description: "Get career advice and interview prep",
       link: "/grow",
-    }
+    },
   ];
 
   return (

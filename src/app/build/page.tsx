@@ -50,10 +50,10 @@ export default function BuildPage() {
         <div className="container mx-auto py-16 px-4">
           <div className="max-w-3xl mx-auto text-center">
             <h1 className="text-5xl font-extrabold mb-6 tracking-tight bg-clip-text text-transparent bg-gradient-to-r from-slate-500 to-slate-800 dark:from-blue-400 dark:to-indigo-400">
-            Build with XOps Lab
+              Build with XOps Lab
             </h1>
             <p className="text-xl text-slate-700 dark:text-slate-300 max-w-2xl mx-auto leading-relaxed">
-            Explore and contribute to our open-source projects
+              Explore and contribute to our open-source projects
             </p>
           </div>
         </div>
@@ -103,7 +103,7 @@ export default function BuildPage() {
       <div className="max-w-3xl mx-auto text-center py-8 px-4 rounded-lg border bg-slate-50 dark:bg-slate-900">
         <h2 className="text-2xl font-bold mb-4">Want to Contribute?</h2>
         <p className="mb-6">
-          We welcome contributions from community members of all skill levels. Whether it's fixing bugs, adding
+          We welcome contributions from community members of all skill levels. Whether it&apos;s fixing bugs, adding
           features, or improving documentation, every contribution counts!
         </p>
         <Button asChild size="lg">
