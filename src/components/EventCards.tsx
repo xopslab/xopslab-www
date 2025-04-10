@@ -3,7 +3,7 @@ import {Badge} from "@/components/ui/badge";
 import {CalendarIcon, MapPin, Users} from "lucide-react";
 import Image from "next/image";
 import {useEffect, useState} from "react";
-import {Carousel, CarouselContent, CarouselItem} from "@/components/ui/carousel";
+import {Carousel, CarouselContent, CarouselItem, CarouselApi} from "@/components/ui/carousel";
 import {useCallback} from "react";
 import {cn} from "@/lib/utils";
 
@@ -56,13 +56,6 @@ const events: Event[] = [
   },
 ];
 
-// Add this type definition for the carousel API
-type CarouselApi = {
-  scrollNext: () => void;
-  scrollTo: (index: number) => void;
-  selectedScrollSnap: () => number;
-};
-
 export default function EventCards() {
   const [api, setApi] = useState<CarouselApi | null>(null);
   const [current, setCurrent] = useState(1); // Start with the middle card (index 1)
@@ -91,7 +84,6 @@ export default function EventCards() {
       api.scrollTo(1);
     }
   }, [api]);
-
   return (
     <section className="py-16 w-full">
       <div className="container mx-auto px-4">
@@ -113,7 +105,7 @@ export default function EventCards() {
           onClick={() => {
             if (api) setCurrent(api.selectedScrollSnap());
           }}>
-          <CarouselContent className="-ml-4">
+          <CarouselContent>
             {events.map((event, index) => (
               <CarouselItem key={event.id} className="pl-4 basis-full sm:basis-1/2 lg:basis-1/3">
                 <div className="p-1 h-full">
