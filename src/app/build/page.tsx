@@ -1,5 +1,5 @@
 import {Button} from "@/components/ui/button";
-import {FaGithub, FaStar, FaCodeBranch} from "react-icons/fa";
+import {FaGithub} from "react-icons/fa";
 import {Metadata} from "next";
 
 export const metadata: Metadata = {
