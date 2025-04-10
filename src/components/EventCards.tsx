@@ -56,8 +56,15 @@ const events: Event[] = [
   },
 ];
 
+// Add this type definition for the carousel API
+type CarouselApi = {
+  scrollNext: () => void;
+  scrollTo: (index: number) => void;
+  selectedScrollSnap: () => number;
+};
+
 export default function EventCards() {
-  const [api, setApi] = useState<any>();
+  const [api, setApi] = useState<CarouselApi | null>(null);
   const [current, setCurrent] = useState(1); // Start with the middle card (index 1)
 
   // Set up auto-sliding
