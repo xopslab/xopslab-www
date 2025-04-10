@@ -1,104 +1,47 @@
 import {FaDiscord} from "react-icons/fa";
-
-export default function Hero() {
-  return (
-    <section className="mx-auto flex max-w-3xl flex-col items-center gap-2 py-8 md:py-12 md:pb-8 lg:py-24 lg:pb-20">
-      <h1 className="scroll-m-20 text-4xl font-extrabold tracking-tight lg:text-5xl text-center text-balance leading-tight lg:leading-[1.1]">
-        Welcome to XOps Lab
-      </h1>
-      <p className="text-lg font-light max-w-xl text-center text-foreground">
-        XOps Lab is a global community for AI & Cloud enthusiasts to connect, learn, and grow together.
-      </p>
-      <div className="flex gap-4 md:pb-10 items-center">
-        <a
-          href="https://discord.gg/Ez4MShHtjF"
-          className="inline-flex items-center mt-7 px-6 py-3 bg-black text-white font-bold rounded-full shadow-lg hover:bg-gray-800 transition relative animate-bounce">
-          <FaDiscord className="mr-2" />
-          Join Discord
-        </a>
-      </div>
-    </section>
-  );
-}
-
-import Link from 'next/link';
-import {useEffect, useMemo, useState} from "react";
-
-import {motion} from "framer-motion";
-
-import {MoveRight} from "lucide-react";
+import Link from "next/link";
 import {Button} from "@/components/ui/button";
 
 export const Hero5 = () => {
-  const [titleNumber, setTitleNumber] = useState(0);
-  const titles = useMemo(() => ["Machine Learning", "AWS", "AZURE", "GitHub", "MLOps", "DevOps"], []);
-
-  useEffect(() => {
-    const timeoutId = setTimeout(() => {
-      if (titleNumber === titles.length - 1) {
-        setTitleNumber(0);
-      } else {
-        setTitleNumber(titleNumber + 1);
-      }
-    }, 2000);
-    return () => clearTimeout(timeoutId);
-  }, [titleNumber, titles]);
-  
   return (
-    <div className="w-full">
+    <section className="w-full pt-24">
+      {" "}
+      {/* Added pt-24 for padding top */}
       <div className="container mx-auto">
-        <div className="flex gap-8 py-10 items-center justify-center flex-col">
-          <div>
-            <Link href="https://debjotyms.com" passHref>
-              <Button variant="secondary" size="sm" className="gap-4">
-                debjotyms.com <MoveRight className="w-4 h-4" />
-              </Button>
-            </Link>
-          </div>
-          <div className="flex gap-4 flex-col">
-            <h1 className="text-5xl md:text-7xl max-w-2xl text-center font-regular">
-              <span className="text-spektr-cyan-50 tracking-tighter">XOps Lab</span>
-              <span className="relative flex w-full justify-center overflow-hidden text-center text-4xl md:pb-4 md:pt-1">
-                &nbsp;
-                {titles.map((title, index) => (
-                  <motion.span
-                    key={index}
-                    className="absolute font-semibold"
-                    initial={{opacity: 0, y: "-100"}}
-                    transition={{type: "spring", stiffness: 50}}
-                    animate={
-                      titleNumber === index
-                        ? {
-                            y: 0,
-                            opacity: 1,
-                          }
-                        : {
-                            y: titleNumber > index ? -150 : 150,
-                            opacity: 0,
-                          }
-                    }>
-                    {title}
-                  </motion.span>
-                ))}
+        <div className="flex gap-8 py-12 items-center justify-center flex-col">
+          <div className="flex gap-4 flex-col px-4">
+            <h1 className="text-4xl md:text-7xl max-w-5xl text-center font-bold">
+              <span className="bg-clip-text text-transparent bg-gradient-to-r from-slate-500 to-slate-800">
+                Empowering the NextGen of AI & Cloud Native Innovators
               </span>
             </h1>
 
-            <p className="text-lg md:text-xl leading-relaxed tracking-tight text-muted-foreground max-w-2xl text-center">
-              XOps Lab is a global community for AI, ML, and Cloud enthusiasts to connect, learn, and grow together.
+            <p className="mx-auto text-xl md:text-2xl leading-relaxed tracking-tight text-muted-foreground max-w-2xl text-center mt-6">
+              XOps Lab is a global open source community empowering AI & Cloud Native enthusiasts to connect, learn,
+              build and grow together.
             </p>
           </div>
-          <div className="flex flex-row gap-3">
-            <div className="flex gap-4 md:pb-10 items-center">
-              <a
-                href="https://discord.gg/Ez4MShHtjF"
-                className="inline-flex items-center mt-7 px-6 py-3 bg-black text-white font-bold rounded-full shadow-lg hover:bg-gray-800 transition relative animate-bounce">
-                <FaDiscord className="mr-2" />
-                Join Discord
-              </a>
-            </div>
+          <div className="flex flex-col sm:flex-row gap-4 justify-center mt-6">
+            <a
+              href="https://discord.gg/Ez4MShHtjF"
+              className="inline-flex items-center justify-center h-12 px-6 bg-indigo-600 hover:bg-indigo-700 text-white font-medium rounded-full shadow-lg transition-all text-base">
+              <FaDiscord className="mr-2 h-4 w-4" />
+              Join Discord
+            </a>
+            <Link href="/learn">
+              <Button
+                size="lg"
+                className="rounded-full bg-slate-600 hover:bg-primary/90 shadow-lg hover:shadow-xl transition-all h-12 px-6 text-base font-medium">
+                Start Learning
+                <span className="ml-2 relative inline-flex h-4 w-4">
+                  <span className="animate-ping absolute inline-flex h-full w-full rounded-full bg-white opacity-75"></span>
+                  <span className="relative inline-flex rounded-full h-4 w-4 bg-white/90"></span>
+                </span>
+              </Button>
+            </Link>
           </div>
         </div>
       </div>
-    </div>
+    </section>
   );
 };
