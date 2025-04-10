@@ -85,10 +85,6 @@ export default function EventCards() {
     }
   }, [api]);
 
-  function handleCardClick(event: React.MouseEvent<HTMLElement>) {
-    // ...existing function body...
-  }
-
   return (
     <section className="py-16 w-full">
       <div className="container mx-auto px-4">
