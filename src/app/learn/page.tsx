@@ -6,6 +6,7 @@ export const metadata: Metadata = {
   description: "Free tutorials, blogs, and videos to help you learn AI, ML, and Cloud technologies.",
 };
 
+// eslint-disable-next-line @typescript-eslint/no-unused-vars
 const tutorials = [
   {
     title: "Introduction to Machine Learning",
@@ -73,7 +74,7 @@ export default function LearnPage() {
           </div>
         </div>
       </div>
-      <UnderConstructionHero/>
+      <UnderConstructionHero />
     </>
   );
 }
