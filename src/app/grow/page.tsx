@@ -1,7 +1,6 @@
 import {Card, CardContent, CardDescription, CardHeader, CardTitle} from "@/components/ui/card";
 import {Badge} from "@/components/ui/badge";
 import {Metadata} from "next";
-import Image from "next/image";
 import {FileText, Briefcase, Laptop, Users} from "lucide-react";
 
 export const metadata: Metadata = {
