@@ -14,9 +14,11 @@ import {MenuIcon} from "lucide-react";
 import Image from "next/image";
 import {usePathname} from "next/navigation";
 import {cn} from "@/lib/utils";
+import {useState} from "react";
 
 export default function Header() {
   const pathname = usePathname();
+  const [isSheetOpen, setIsSheetOpen] = useState(false);
 
   const navItems = [
     {path: "/", label: "Home"},
@@ -25,6 +27,11 @@ export default function Header() {
     {path: "/grow", label: "Grow"},
     {path: "/community", label: "Community"},
   ];
+
+  // Function to close the sheet
+  const handleNavigation = () => {
+    setIsSheetOpen(false);
+  };
 
   return (
     <header className="fixed top-0 left-0 right-0 z-50 flex items-center justify-center py-4 px-3 md:px-6 w-full backdrop-blur-md bg-background/80 border-border/40">
@@ -69,7 +76,7 @@ export default function Header() {
 
         {/* Mobile Navigation */}
         <div className="md:hidden ml-auto">
-          <Sheet>
+          <Sheet open={isSheetOpen} onOpenChange={setIsSheetOpen}>
             <SheetTrigger asChild>
               <Button variant="outline" size="icon" className="ml-2">
                 <MenuIcon className="h-5 w-5" />
@@ -83,6 +90,7 @@ export default function Header() {
                   <Link
                     key={item.path}
                     href={item.path}
+                    onClick={handleNavigation}
                     className={cn(
                       "p-2 hover:bg-muted rounded-md transition-colors",
                       pathname === item.path && "bg-muted font-medium"
@@ -92,7 +100,7 @@ export default function Header() {
                 ))}
               </nav>
               <div className="mt-6">
-                <Link href="#">
+                <Link href="#" onClick={handleNavigation}>
                   <Button className="w-full rounded-full bg-[#365062] hover:bg-[#2a3f4e] hover:shadow-lg transition-all duration-300">
                     Sign Up
                   </Button>
