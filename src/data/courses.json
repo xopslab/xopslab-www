@@ -1,0 +1,138 @@
+{
+  "courses": [
+    {
+      "id": "docker",
+      "title": "Docker",
+      "description": "Learn Docker containerization from basics to advanced deployment strategies",
+      "image": "/images/courses/docker.png",
+      "videos": []
+    },
+    {
+      "id": "aws",
+      "title": "AWS",
+      "description": "Master Amazon Web Services cloud computing platform",
+      "image": "/images/courses/aws.png",
+      "videos": [
+        {
+          "id": "aws-1",
+          "title": "AWS Essentials",
+          "description": "Overview of core AWS services and how to use the AWS Management Console.",
+          "youtubeUrl": "https://youtube.com/watch?v=aws-essentials",
+          "resourceUrl": "/resources/aws-essentials.zip"
+        },
+        {
+          "id": "aws-2",
+          "title": "2. AWS Management Console - ম্যানেজমেন্ট কনসোল পরিচিতি",
+          "description": "Get to know the basics of AWS Management Console.",
+          "youtubeUrl": "https://youtu.be/w3YCdFIO4cY?si=-zAJnUofe2Mkg4mt",
+          "resourceUrl": ""
+        }
+      ]
+    },
+    {
+      "id": "leetcode",
+      "title": "LeetCode",
+      "description": "Ace coding interviews with algorithmic problem solving strategies",
+      "image": "/images/courses/leetcode.png",
+      "videos": [
+        {
+          "id": "leetcode-1",
+          "title": "Arrays and Strings",
+          "description": "Common patterns and approaches for array and string problems.",
+          "youtubeUrl": "https://youtube.com/watch?v=arrays-strings",
+          "resourceUrl": "/resources/leetcode-arrays.zip"
+        }
+      ]
+    },
+    {
+      "id": "python",
+      "title": "Python",
+      "description": "From Python basics to advanced programming techniques",
+      "image": "/images/courses/python.png",
+      "videos": [
+        {
+          "id": "python-1",
+          "title": "Python Fundamentals",
+          "description": "Learn Python syntax, data types, and basic programming concepts.",
+          "youtubeUrl": "https://youtube.com/watch?v=python-fundamentals",
+          "resourceUrl": "/resources/python-basics.zip"
+        }
+      ]
+    },
+    {
+      "id": "kubernetes",
+      "title": "Kubernetes",
+      "description": "Container orchestration with Kubernetes",
+      "image": "/images/courses/kubernetes.png",
+      "videos": [
+        {
+          "id": "k8s-1",
+          "title": "Kubernetes Introduction",
+          "description": "Introduction to Kubernetes architecture and components.",
+          "youtubeUrl": "https://youtube.com/watch?v=k8s-intro",
+          "resourceUrl": "/resources/k8s-intro.zip"
+        }
+      ]
+    },
+    {
+      "id": "azure",
+      "title": "Azure",
+      "description": "Microsoft Azure cloud services and solutions",
+      "image": "/images/courses/azure.png",
+      "videos": [
+        {
+          "id": "azure-1",
+          "title": "Azure Fundamentals",
+          "description": "Introduction to Microsoft Azure cloud services.",
+          "youtubeUrl": "https://youtube.com/watch?v=azure-fundamentals",
+          "resourceUrl": "/resources/azure-basics.zip"
+        }
+      ]
+    },
+    {
+      "id": "ml",
+      "title": "Machine Learning",
+      "description": "Machine learning concepts, algorithms and practical implementations",
+      "image": "/images/courses/ml.png",
+      "videos": [
+        {
+          "id": "ml-1",
+          "title": "ML Fundamentals",
+          "description": "Introduction to machine learning concepts and algorithms.",
+          "youtubeUrl": "https://youtube.com/watch?v=ml-fundamentals",
+          "resourceUrl": "/resources/ml-basics.zip"
+        }
+      ]
+    },
+    {
+      "id": "gcp",
+      "title": "GCP",
+      "description": "Google Cloud Platform services and solutions",
+      "image": "/images/courses/gcp.png",
+      "videos": [
+        {
+          "id": "gcp-1",
+          "title": "GCP Essentials",
+          "description": "Introduction to Google Cloud Platform services.",
+          "youtubeUrl": "https://youtube.com/watch?v=gcp-essentials",
+          "resourceUrl": "/resources/gcp-basics.zip"
+        }
+      ]
+    },
+    {
+      "id": "dsa",
+      "title": "DSA",
+      "description": "Data Structures and Algorithms fundamentals",
+      "image": "/images/courses/dsa.png",
+      "videos": [
+        {
+          "id": "dsa-1",
+          "title": "Array Data Structure",
+          "description": "Understanding arrays and their operations.",
+          "youtubeUrl": "https://youtube.com/watch?v=array-dsa",
+          "resourceUrl": "/resources/dsa-arrays.zip"
+        }
+      ]
+    }
+  ]
+}
