@@ -1,0 +1,119 @@
+{
+  "courses": [
+    {
+      "id": "DKR",
+      "title": "Docker",
+      "description": "Learn Docker containerization from basics to advanced deployment strategies",
+      "image": "/images/courses/docker.png",
+      "videos": []
+    },
+    {
+      "id": "AWS",
+      "title": "AWS",
+      "description": "Master Amazon Web Services cloud computing platform",
+      "image": "/images/courses/aws.png",
+      "videos": [
+        {
+          "id": "AWS1",
+          "title": "1. Getting Started with AWS Free Tier - অ্যামাজন ওয়েব সার্ভিস ফ্রি একাউন্ট",
+          "description": "",
+          "youtubeUrl": "https://youtu.be/8AeEORu_8X0?si=0MnTOH0EOdQMrvs1",
+          "resourceUrl": ""
+        },
+        {
+          "id": "AWS2",
+          "title": "2. AWS Management Console - ম্যানেজমেন্ট কনসোল পরিচিতি",
+          "description": "",
+          "youtubeUrl": "https://youtu.be/w3YCdFIO4cY?si=-zAJnUofe2Mkg4mt",
+          "resourceUrl": ""
+        }
+      ]
+    },
+    {
+      "id": "LEET",
+      "title": "LeetCode",
+      "description": "Ace coding interviews with algorithmic problem solving strategies",
+      "image": "/images/courses/leetcode.png",
+      "videos": [
+        {
+          "id": "LEET1",
+          "title": "1. Two Sum - বাংলায় LeetCode - পাইথন",
+          "description": "",
+          "youtubeUrl": "https://youtu.be/hfN4VONP4HQ",
+          "resourceUrl": ""
+        },
+        {
+          "id": "LEET2",
+          "title": "118. Pascal's Triangle - বাংলায় LeetCode - Python",
+          "description": "",
+          "youtubeUrl": "https://youtu.be/KYHfHLCcQcs",
+          "resourceUrl": ""
+        },
+        {
+          "id": "LEET3",
+          "title": "217. Contains Duplicate - বাংলায় LeetCode - পাইথন",
+          "description": "",
+          "youtubeUrl": "https://youtu.be/w29Wrsehl40",
+          "resourceUrl": ""
+        },
+        {
+          "id": "LEET4",
+          "title": "242. Valid Anagram - বাংলায় LeetCode - পাইথন",
+          "description": "",
+          "youtubeUrl": "https://youtu.be/i3gKaEpOB_s",
+          "resourceUrl": ""
+        }
+      ]
+    },
+    {
+      "id": "PY",
+      "title": "Python",
+      "description": "From Python basics to advanced programming techniques",
+      "image": "/images/courses/python.png",
+      "videos": [
+        {
+          "id": "PY1",
+          "title": "1. পাইথন পরিচিতি, ইনস্টলেশন এবং VS Code সেটাপ - Introduction to Python and VS Code Setup in Bangla",
+          "description": "",
+          "youtubeUrl": "https://youtube.com/watch?v=python-fundamentals",
+          "resourceUrl": "https://youtu.be/tHcASrRouv8"
+        }
+      ]
+    },
+    {
+      "id": "K8S",
+      "title": "Kubernetes",
+      "description": "Container orchestration with Kubernetes",
+      "image": "/images/courses/kubernetes.png",
+      "videos": []
+    },
+    {
+      "id": "AZ",
+      "title": "Azure",
+      "description": "Microsoft Azure cloud services and solutions",
+      "image": "/images/courses/azure.png",
+      "videos": []
+    },
+    {
+      "id": "ML",
+      "title": "Machine Learning",
+      "description": "Machine learning concepts, algorithms and practical implementations",
+      "image": "/images/courses/ml.png",
+      "videos": []
+    },
+    {
+      "id": "GCP",
+      "title": "GCP",
+      "description": "Google Cloud Platform services and solutions",
+      "image": "/images/courses/gcp.png",
+      "videos": []
+    },
+    {
+      "id": "DSA",
+      "title": "DSA",
+      "description": "Data Structures and Algorithms fundamentals",
+      "image": "/images/courses/dsa.png",
+      "videos": []
+    }
+  ]
+}
