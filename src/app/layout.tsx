@@ -8,7 +8,7 @@ import Footer from "@/components/footer";
 const inter = Inter({subsets: ["latin"]});
 
 export const metadata: Metadata = {
-  title: "XOpsLab",
+  title: "XOps Lab",
   description: "A global open source community empowering AI & Cloud Native enthusiasts",
 };
 
